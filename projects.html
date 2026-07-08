@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliran Portfolio | Projects</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <canvas id="space"></canvas>
+  <div class="noise"></div>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+
+  <header class="navbar">
+    <a class="brand" href="index.html"><span class="brand-mark">V</span><span class="brand-text">velik541</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-title reveal">
+      <p class="eyebrow">Projects</p>
+      <h1>Practical work.</h1>
+      <p>Projects that show my learning path in Python, DevOps, Linux and automation.</p>
+    </section>
+
+    <section class="project-list reveal">
+      <article class="project-card featured">
+        <div class="project-number">01</div>
+        <div>
+          <h2>Enterprise DevOps Infrastructure Lab</h2>
+          <p>
+            Corporate-style infrastructure lab with Flask, PostgreSQL, Nginx, Docker,
+            Kubernetes, Terraform, Ansible, GitHub Actions, Prometheus and Grafana.
+          </p>
+          <div class="tags"><span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>Ansible</span><span>CI/CD</span></div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">02</div>
+        <div>
+          <h2>Beautiful Flask Tabs App</h2>
+          <p>
+            Flask mini-project with tabs, API endpoint, JSON notes, feedback form,
+            responsive UI, Docker and Nginx configuration.
+          </p>
+          <div class="tags"><span>Python</span><span>Flask</span><span>Docker</span><span>Nginx</span></div>
+          <a class="project-link" href="https://github.com/velik541/beautiful-flask-tabs-app" target="_blank" rel="noopener">View repository</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">03</div>
+        <div>
+          <h2>DevOps Lab Site</h2>
+          <p>
+            Docker/Nginx/Flask/Redis app with architecture: Browser → Nginx → Flask → Redis.
+            Includes health and stats endpoints.
+          </p>
+          <div class="tags"><span>Docker Compose</span><span>Redis</span><span>Gunicorn</span><span>Linux</span></div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">04</div>
+        <div>
+          <h2>Telegram Bot Project</h2>
+          <p>
+            Python Telegram bot project created for automation practice and API learning.
+          </p>
+          <div class="tags"><span>Python</span><span>Telegram API</span><span>Automation</span><span>GitHub</span></div>
+          <a class="project-link" href="https://github.com/velik541/botiiu" target="_blank" rel="noopener">View repository</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer"><p>© 2026 Eliran Portfolio</p><a href="https://github.com/velik541" target="_blank" rel="noopener">GitHub</a></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,332 +1,117 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eliran Portfolio</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #0b0f19;
-      color: white;
-      overflow-x: hidden;
-    }
-
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      background:
-        radial-gradient(circle at center, rgba(59, 130, 246, 0.25), transparent 35%),
-        linear-gradient(135deg, #020617, #0f172a);
-      text-align: center;
-      position: relative;
-    }
-
-    .visualizer {
-      width: 360px;
-      height: 360px;
-      position: relative;
-      margin-bottom: 30px;
-      animation: slowRotate 35s linear infinite;
-    }
-
-    .bar {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 4px;
-      height: 120px;
-      background: linear-gradient(to top, #38bdf8, #ffffff);
-      transform-origin: 0 0;
-      border-radius: 10px;
-      opacity: 0.85;
-      animation: pulse 1.4s ease-in-out infinite;
-    }
-
-    .center-logo {
-      position: absolute;
-      width: 150px;
-      height: 150px;
-      background: #020617;
-      border: 2px solid #38bdf8;
-      border-radius: 50%;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 0 40px rgba(56, 189, 248, 0.45);
-      z-index: 2;
-    }
-
-    .center-logo span {
-      font-size: 42px;
-      font-weight: bold;
-      color: #38bdf8;
-    }
-
-    h1 {
-      font-size: 48px;
-      margin-bottom: 12px;
-    }
-
-    .subtitle {
-      color: #cbd5e1;
-      font-size: 20px;
-      margin-bottom: 25px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 22px;
-      background: #2563eb;
-      color: white;
-      border-radius: 25px;
-      text-decoration: none;
-      margin: 5px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #38bdf8;
-      color: #020617;
-    }
-
-    section {
-      max-width: 950px;
-      margin: auto;
-      padding: 55px 20px;
-    }
-
-    h2 {
-      color: #38bdf8;
-      margin-bottom: 20px;
-      font-size: 30px;
-      border-bottom: 1px solid #334155;
-      padding-bottom: 10px;
-    }
-
-    .card {
-      background: #111827;
-      border: 1px solid #1e293b;
-      border-radius: 16px;
-      padding: 22px;
-      margin: 18px 0;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
-    }
-
-    .card h3 {
-      color: #e0f2fe;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: #cbd5e1;
-      line-height: 1.6;
-    }
-
-    .skills span {
-      display: inline-block;
-      background: #1d4ed8;
-      padding: 9px 14px;
-      margin: 6px;
-      border-radius: 20px;
-      font-size: 14px;
-    }
-
-    a {
-      color: #38bdf8;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #94a3b8;
-      background: #020617;
-    }
-
-    @keyframes pulse {
-      0%, 100% {
-        height: 90px;
-        opacity: 0.45;
-      }
-
-      50% {
-        height: 140px;
-        opacity: 1;
-      }
-    }
-
-    @keyframes slowRotate {
-      from {
-        transform: rotate(0deg);
-      }
-
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    @media (max-width: 600px) {
-      .visualizer {
-        width: 280px;
-        height: 280px;
-      }
-
-      .center-logo {
-        width: 120px;
-        height: 120px;
-      }
-
-      h1 {
-        font-size: 34px;
-      }
-
-      .subtitle {
-        font-size: 16px;
-      }
-    }
-  </style>
+  <meta name="description" content="Eliran portfolio - Python, cybersecurity, OSINT, Linux and DevOps projects." />
+  <title>Eliran Portfolio | Home</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
+  <canvas id="space"></canvas>
 
-  <div class="hero">
-    <div class="visualizer" id="visualizer">
-      <div class="center-logo">
-        <span>V</span>
+  <div class="noise"></div>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+
+  <header class="navbar">
+    <a class="brand" href="index.html" aria-label="Go to home page">
+      <span class="brand-mark">V</span>
+      <span class="brand-text">velik541</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="visualizer-wrap">
+          <div class="outer-ring"></div>
+          <div class="inner-ring"></div>
+          <div class="visualizer" id="visualizer"></div>
+          <div class="logo-core">
+            <div class="core-ring"></div>
+            <span>V</span>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <h1>Eliran Portfolio</h1>
-    <p class="subtitle">
-      Python Developer • Cybersecurity Learner • OSINT Researcher • Linux Enthusiast
-    </p>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Portfolio / Cyber / DevOps</p>
+        <h1>Eliran<br><span>Portfolio</span></h1>
+        <p class="hero-text">
+          Python Developer • Cybersecurity Learner • OSINT Researcher • Linux Enthusiast
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="projects.html">View Projects</a>
+          <a class="btn ghost" href="certificates.html">Certificates</a>
+          <a class="btn ghost" href="https://github.com/velik541" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
 
-    <div>
-      <a class="btn" href="#projects">Projects</a>
-      <a class="btn" href="#certificates">Certificates</a>
-      <a class="btn" href="https://github.com/velik541" target="_blank">GitHub</a>
-    </div>
-  </div>
+    <section class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">What I do</p>
+        <h2>Building real IT skills through practical projects</h2>
+      </div>
 
-  <section>
-    <h2>About Me</h2>
-    <div class="card">
-      <p>
-        Hi, my name is Eliran. I am learning Python development, cybersecurity,
-        Linux, OSINT and DevOps.
-      </p>
-      <p>
-        I build practical projects to improve my skills and create a strong IT portfolio.
-        My main interests are backend development, automation, security, networking,
-        Docker and cloud technologies.
-      </p>
-    </div>
-  </section>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="card-icon">01</span>
+          <h3>Python & Backend</h3>
+          <p>Small web apps, APIs, automation scripts and Telegram bot projects.</p>
+        </article>
 
-  <section>
-    <h2>Skills</h2>
-    <div class="card skills">
-      <span>Python</span>
-      <span>Linux</span>
-      <span>GitHub</span>
-      <span>Docker</span>
-      <span>Flask</span>
-      <span>Nginx</span>
-      <span>Cybersecurity</span>
-      <span>OSINT</span>
-      <span>Networking</span>
-      <span>DevOps Basics</span>
-    </div>
-  </section>
+        <article class="feature-card">
+          <span class="card-icon">02</span>
+          <h3>DevOps Basics</h3>
+          <p>Docker, Docker Compose, Nginx, GitHub Actions, Linux and deployment practice.</p>
+        </article>
 
-  <section id="projects">
-    <h2>Projects</h2>
+        <article class="feature-card">
+          <span class="card-icon">03</span>
+          <h3>Cybersecurity</h3>
+          <p>Networking, Linux security, OSINT research and safe practical labs.</p>
+        </article>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3>Beautiful Flask Tabs App</h3>
-      <p>
-        A small Flask web application with tabs, API endpoint, feedback form and responsive UI.
-      </p>
-      <p><b>Technologies:</b> Python, Flask, HTML, CSS, Docker, Nginx</p>
-      <p>
-        <a href="https://github.com/velik541/beautiful-flask-tabs-app" target="_blank">
-          View on GitHub
-        </a>
-      </p>
-    </div>
+    <section class="section split reveal">
+      <div>
+        <p class="eyebrow">Current focus</p>
+        <h2>From learner to Junior IT / DevOps specialist</h2>
+      </div>
+      <div class="glass-panel">
+        <p>
+          I am focused on practical experience: building projects, publishing them on GitHub,
+          documenting what I learn and improving my technical portfolio step by step.
+        </p>
+        <div class="stats-row">
+          <div><strong>10+</strong><span>Skills</span></div>
+          <div><strong>4+</strong><span>Projects</span></div>
+          <div><strong>100%</strong><span>Practice</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <div class="card">
-      <h3>Telegram Bot Project</h3>
-      <p>
-        A Telegram bot project built with Python.
-      </p>
-      <p><b>Technologies:</b> Python, Telegram Bot API, GitHub</p>
-    </div>
-
-    <div class="card">
-      <h3>DevOps Lab</h3>
-      <p>
-        A practical DevOps learning project with Docker, Nginx, Flask and Redis.
-      </p>
-      <p><b>Technologies:</b> Docker, Docker Compose, Nginx, Flask, Redis, GitHub</p>
-    </div>
-  </section>
-
-  <section id="certificates">
-    <h2>Certificates</h2>
-    <div class="card">
-      <p>Here I will add my certificates from courses and practical lessons.</p>
-      <br>
-      <ul>
-        <li>Python Certificate</li>
-        <li>Linux Certificate</li>
-        <li>Cybersecurity Certificate</li>
-        <li>DevOps Certificate</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <div class="card">
-      <p>GitHub: <a href="https://github.com/velik541" target="_blank">github.com/velik541</a></p>
-      <p>Email: add-your-email-here</p>
-    </div>
-  </section>
-
-  <footer>
-    © 2026 Eliran Portfolio
+  <footer class="footer">
+    <p>© 2026 Eliran Portfolio</p>
+    <a href="https://github.com/velik541" target="_blank" rel="noopener">github.com/velik541</a>
   </footer>
 
-  <script>
-    const visualizer = document.getElementById("visualizer");
-    const bars = 72;
-
-    for (let i = 0; i < bars; i++) {
-      const bar = document.createElement("div");
-      bar.className = "bar";
-
-      const angle = (360 / bars) * i;
-      bar.style.transform = `rotate(${angle}deg) translateY(-170px)`;
-      bar.style.animationDelay = `${Math.random() * 1.5}s`;
-
-      visualizer.appendChild(bar);
-    }
-  </script>
-
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
