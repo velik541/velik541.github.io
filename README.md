@@ -1,26 +1,31 @@
-# Eliran Portfolio
+# Eliran Balabekov — Professional Portfolio
 
-Static multi-page portfolio for GitHub Pages.
+Static multi-page portfolio website for GitHub Pages.
+
+## Strong positioning
+
+This version presents the profile in a stronger professional style while staying based on real portfolio projects and real certificates.
 
 ## Pages
 
-- Home: `index.html`
-- About: `about.html`
-- Projects: `projects.html`
-- Certificates: `certificates.html`
-- Contact: `contact.html`
+- `index.html` — homepage
+- `about.html` — about, stack, mindset
+- `projects.html` — production-style projects
+- `certificates.html` — Skillbox Linux certificates
+- `contact.html` — contact details
 
-## How to use
+## Publish
 
-Upload all files to the `velik541.github.io` repository.
-GitHub Pages will publish the site at:
+Copy all files to the root of `velik541.github.io` and run:
 
-https://velik541.github.io
+```bash
+git add .
+git commit -m "Upgrade professional portfolio"
+git push origin main
+```
 
-## Certificates
+Open: https://velik541.github.io
 
-Put PDF or image certificates inside:
+## Edit contact
 
-`assets/certificates/`
-
-Then update links in `certificates.html`.
+Open `contact.html` and replace `add-your-email-here` with your real email.

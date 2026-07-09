@@ -3,51 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eliran Portfolio | Contact</title>
+  <meta name="description" content="Contact details and professional summary" />
+  <title>Contact — Eliran Balabekov</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <canvas id="space"></canvas>
   <div class="noise"></div>
-  <div class="page-glow glow-one"></div>
-  <div class="page-glow glow-two"></div>
+  <header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html" aria-label="Eliran Portfolio Home">
+      <span class="brand-mark">E</span>
+      <span>Eliran</span>
+    </a>
 
-  <header class="navbar">
-    <a class="brand" href="index.html"><span class="brand-mark">V</span><span class="brand-text">velik541</span></a>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
-    <nav class="nav-links" id="navLinks">
+    <button class="mobile-toggle" data-menu-toggle aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links" data-nav-links>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
       <a href="certificates.html">Certificates</a>
       <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    </div>
 
-  <main class="page-main">
-    <section class="page-title reveal">
+    <div class="nav-actions">
+      <a class="btn btn-primary" href="https://github.com/velik541" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container reveal">
       <p class="eyebrow">Contact</p>
-      <h1>Let’s connect.</h1>
-      <p>Use these links to view my work or contact me.</p>
-    </section>
+      <h1 class="page-title">Let’s connect and build.</h1>
+      <p class="page-subtitle">I am open to portfolio review, junior IT tasks, DevOps/Linux practice opportunities, Python automation tasks and technical collaboration.</p>
+    </div>
+  </section>
 
-    <section class="contact-grid reveal">
-      <a class="contact-card" href="https://github.com/velik541" target="_blank" rel="noopener">
-        <span>GitHub</span>
-        <strong>github.com/velik541</strong>
-      </a>
-      <a class="contact-card" href="mailto:add-your-email-here">
-        <span>Email</span>
-        <strong>add-your-email-here</strong>
-      </a>
-      <a class="contact-card" href="projects.html">
-        <span>Portfolio</span>
-        <strong>View my projects</strong>
-      </a>
-    </section>
-  </main>
-
-  <footer class="footer"><p>© 2026 Eliran Portfolio</p><a href="index.html">Back home</a></footer>
-  <script src="assets/js/main.js"></script>
+  <section class="section-small">
+    <div class="container grid-2">
+      <div class="card reveal">
+        <h3>Contact Details</h3>
+        <div class="contact-box" style="margin-top:20px">
+          <div class="contact-row"><span>GitHub</span><strong><a href="https://github.com/velik541" target="_blank" rel="noreferrer">github.com/velik541</a></strong></div>
+          <div class="contact-row"><span>Email</span><strong>add-your-email-here</strong></div>
+          <div class="contact-row"><span>Focus</span><strong>Python • Linux • DevOps • Security</strong></div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <h3>Professional Summary</h3>
+        <p>Hands-on technical profile with strong focus on Python backend, Linux administration, DevOps automation, Docker infrastructure, networking diagnostics and defensive cybersecurity.</p>
+        <div class="tags"><span class="tag">Backend</span><span class="tag">Linux</span><span class="tag">DevOps</span><span class="tag">Automation</span><span class="tag">Security</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <p>© 2026 Eliran Balabekov. Built for GitHub Pages.</p>
+    <a href="https://github.com/velik541" target="_blank" rel="noreferrer">github.com/velik541</a>
+  </div>
+</footer>  <script src="assets/js/main.js"></script>
 </body>
 </html>

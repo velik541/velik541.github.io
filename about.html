@@ -3,93 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eliran Portfolio | About</title>
+  <meta name="description" content="About Eliran Balabekov technical profile" />
+  <title>About — Eliran Balabekov</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <canvas id="space"></canvas>
   <div class="noise"></div>
-  <div class="page-glow glow-one"></div>
-  <div class="page-glow glow-two"></div>
+  <header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html" aria-label="Eliran Portfolio Home">
+      <span class="brand-mark">E</span>
+      <span>Eliran</span>
+    </a>
 
-  <header class="navbar">
-    <a class="brand" href="index.html"><span class="brand-mark">V</span><span class="brand-text">velik541</span></a>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
-    <nav class="nav-links" id="navLinks">
+    <button class="mobile-toggle" data-menu-toggle aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links" data-nav-links>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
       <a href="certificates.html">Certificates</a>
       <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    </div>
 
-  <main class="page-main">
-    <section class="page-title reveal">
-      <p class="eyebrow">About me</p>
-      <h1>Learning by building.</h1>
-      <p>I am creating a portfolio around Python, Linux, cybersecurity, OSINT and DevOps.</p>
-    </section>
+    <div class="nav-actions">
+      <a class="btn btn-primary" href="https://github.com/velik541" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container reveal">
+      <p class="eyebrow">About Me</p>
+      <h1 class="page-title">A hands-on IT builder with a strong engineering mindset.</h1>
+      <p class="page-subtitle">I focus on Python, Linux, DevOps, networking, automation and defensive cybersecurity. I learn deeply, build practical systems and document my work like real engineering projects.</p>
+    </div>
+  </section>
 
-    <section class="section split reveal">
-      <div class="glass-panel big-text">
-        <p>
-          Hi, my name is Eliran. I am learning Python development, cybersecurity,
-          Linux, OSINT and DevOps. I build practical projects to improve my skills
-          and show real hands-on experience.
-        </p>
-        <p>
-          My main interests are backend development, automation, security,
-          networking, Docker and cloud technologies.
-        </p>
+  <section class="section-small">
+    <div class="container grid-2">
+      <div class="card reveal">
+        <h3>Who I Am</h3>
+        <p>My name is Eliran Balabekov. I build portfolio-grade technical projects that combine backend development, Linux systems, containers, networking and security thinking.</p>
+        <p style="margin-top:14px">I like understanding how systems work from the inside: services, ports, DNS, APIs, databases, infrastructure, logs, failures and security controls.</p>
       </div>
+      <div class="card reveal">
+        <h3>How I Work</h3>
+        <p>I focus on projects that can be opened, reviewed, launched and improved. My goal is to write clear code, document the architecture and show real problem-solving ability.</p>
+        <div class="tags"><span class="tag">Clean structure</span><span class="tag">Real architecture</span><span class="tag">Debugging</span><span class="tag">Documentation</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Core Competencies</p>
+        <h2 class="section-title">Strong technical stack across several IT areas.</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal"><div class="icon">💻</div><h3>Backend Development</h3><p>Python, FastAPI, Flask, REST APIs, Telegram bots, SQLAlchemy, templates, tests, CLI tools and automation scripts.</p><div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">SQL</span></div></div>
+        <div class="card reveal"><div class="icon">🐧</div><h3>Linux Administration</h3><p>Ubuntu/Linux terminal workflow, services, permissions, networking tools, package management, logs and system troubleshooting.</p><div class="tags"><span class="tag">Linux</span><span class="tag">Ubuntu</span><span class="tag">Terminal</span><span class="tag">Systemd</span></div></div>
+        <div class="card reveal"><div class="icon">⚙️</div><h3>DevOps Engineering</h3><p>Docker, Docker Compose, Nginx, Gunicorn, GitHub Actions, CI/CD, Kubernetes basics, Terraform, Ansible and monitoring concepts.</p><div class="tags"><span class="tag">Docker</span><span class="tag">Nginx</span><span class="tag">CI/CD</span><span class="tag">IaC</span></div></div>
+        <div class="card reveal"><div class="icon">🛡️</div><h3>Cybersecurity</h3><p>OSINT, Linux security, defensive checks, IOC extraction, password checks, HTTP security headers, logs and ethical investigation workflows.</p></div>
+        <div class="card reveal"><div class="icon">🌐</div><h3>Networking</h3><p>TCP/IP, DNS, HTTP/S, routing, ports, subnetting, VPN concepts, ping/traceroute/dig/nmap basics and network diagnostics.</p></div>
+        <div class="card reveal"><div class="icon">🤖</div><h3>AI Automation</h3><p>AI-assisted coding, prompt engineering, Telegram automation, data analysis ideas and integration planning for LLM-based tools.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-small">
+    <div class="container">
+      <div class="section-head reveal"><p class="eyebrow">Engineering Mindset</p><h2 class="section-title">What makes the profile strong.</h2></div>
       <div class="timeline">
-        <div class="timeline-item">
-          <span></span>
-          <div>
-            <h3>Python</h3>
-            <p>Apps, scripts, APIs and Telegram bots.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <span></span>
-          <div>
-            <h3>Linux</h3>
-            <p>Terminal, networking tools, services and basic administration.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <span></span>
-          <div>
-            <h3>DevOps</h3>
-            <p>Docker, Nginx, CI/CD, GitHub and deployment practice.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <span></span>
-          <div>
-            <h3>Cybersecurity</h3>
-            <p>OSINT, networking, security basics and safe lab practice.</p>
-          </div>
-        </div>
+        <div class="timeline-item reveal"><h3>End-to-end thinking</h3><p>I think about the full system: user flow, backend logic, database, deployment, logs, security, monitoring and documentation.</p></div>
+        <div class="timeline-item reveal"><h3>Debugging and troubleshooting</h3><p>I practice finding real causes of technical problems instead of only guessing: logs, services, network checks and step-by-step validation.</p></div>
+        <div class="timeline-item reveal"><h3>Security-first approach</h3><p>I study how to build and operate systems with safer configuration, better access control, careful secrets handling and defensive awareness.</p></div>
+        <div class="timeline-item reveal"><h3>Continuous improvement</h3><p>Every project is treated as a system that can be improved with tests, CI, Docker, README documentation and cleaner architecture.</p></div>
       </div>
-    </section>
-
-    <section class="section reveal">
-      <div class="section-head">
-        <p class="eyebrow">Skills</p>
-        <h2>Technical stack</h2>
-      </div>
-      <div class="skill-cloud">
-        <span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
-        <span>Linux</span><span>Git</span><span>GitHub</span><span>Docker</span><span>Docker Compose</span>
-        <span>Nginx</span><span>Redis</span><span>PostgreSQL</span><span>Networking</span><span>OSINT</span>
-        <span>Cybersecurity Basics</span><span>DevOps Basics</span><span>Automation</span>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer"><p>© 2026 Eliran Portfolio</p><a href="contact.html">Contact me</a></footer>
-  <script src="assets/js/main.js"></script>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <p>© 2026 Eliran Balabekov. Built for GitHub Pages.</p>
+    <a href="https://github.com/velik541" target="_blank" rel="noreferrer">github.com/velik541</a>
+  </div>
+</footer>  <script src="assets/js/main.js"></script>
 </body>
 </html>

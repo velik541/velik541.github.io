@@ -3,115 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Eliran portfolio - Python, cybersecurity, OSINT, Linux and DevOps projects." />
-  <title>Eliran Portfolio | Home</title>
+  <meta name="description" content="Professional portfolio focused on Python, Linux, DevOps, automation and defensive cybersecurity" />
+  <title>Eliran Balabekov — Professional Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <canvas id="space"></canvas>
-
   <div class="noise"></div>
-  <div class="page-glow glow-one"></div>
-  <div class="page-glow glow-two"></div>
-
-  <header class="navbar">
-    <a class="brand" href="index.html" aria-label="Go to home page">
-      <span class="brand-mark">V</span>
-      <span class="brand-text">velik541</span>
+  <header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html" aria-label="Eliran Portfolio Home">
+      <span class="brand-mark">E</span>
+      <span>Eliran</span>
     </a>
 
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+    <button class="mobile-toggle" data-menu-toggle aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
 
-    <nav class="nav-links" id="navLinks">
+    <div class="nav-links" data-nav-links>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
       <a href="certificates.html">Certificates</a>
       <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    </div>
 
-  <main>
-    <section class="hero">
-      <div class="hero-orbit" aria-hidden="true">
-        <div class="visualizer-wrap">
-          <div class="outer-ring"></div>
-          <div class="inner-ring"></div>
-          <div class="visualizer" id="visualizer"></div>
-          <div class="logo-core">
-            <div class="core-ring"></div>
-            <span>V</span>
+    <div class="nav-actions">
+      <a class="btn btn-primary" href="https://github.com/velik541" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <div class="kicker"><span class="status-dot"></span> Professional-grade portfolio • Python • Linux • DevOps • Security</div>
+        <h1 class="hero-title">Eliran <span class="gradient-text">Balabekov</span></h1>
+        <p class="hero-subtitle">
+          Hands-on IT specialist building end-to-end technical projects across Python backend, Linux administration,
+          DevOps automation, Docker infrastructure, networking and defensive cybersecurity.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="projects.html">View Engineering Projects</a>
+          <a class="btn" href="certificates.html">Linux Certificates</a>
+          <a class="btn" href="contact.html">Contact</a>
+        </div>
+        <div class="metrics">
+          <div class="metric"><strong>6+</strong><span>Production-style projects</span></div>
+          <div class="metric"><strong>3</strong><span>Linux certificates</span></div>
+          <div class="metric"><strong>10+</strong><span>Technologies in stack</span></div>
+        </div>
+      </div>
+
+      <div class="orb-wrap reveal">
+        <div class="orb-card one"><strong>End-to-End Engineering</strong><span>Backend, database, API, Docker, Nginx, CI/CD, monitoring and documentation.</span></div>
+        <div class="visualizer" aria-label="Animated portfolio visualizer">
+          <div class="ring" data-ring></div>
+          <div class="core">
+            <div class="core-inner">E</div>
+            <div class="core-label">Build • Secure • Automate</div>
           </div>
         </div>
+        <div class="orb-card two"><strong>Security & Infrastructure</strong><span>Linux systems, network diagnostics, OSINT, logs, hardening mindset and troubleshooting.</span></div>
       </div>
+    </div>
+  </section>
 
-      <div class="hero-content reveal">
-        <p class="eyebrow">Portfolio / Cyber / DevOps</p>
-        <h1>Eliran<br><span>Portfolio</span></h1>
-        <p class="hero-text">
-          Python Developer • Cybersecurity Learner • OSINT Researcher • Linux Enthusiast
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="projects.html">View Projects</a>
-          <a class="btn ghost" href="certificates.html">Certificates</a>
-          <a class="btn ghost" href="https://github.com/velik541" target="_blank" rel="noopener">GitHub</a>
-        </div>
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Technical Profile</p>
+        <h2 class="section-title">I build complete systems, not random demos.</h2>
+        <p class="section-text">My work is focused on real architecture: clean Python structure, APIs, databases, containers, reverse proxy, CI checks, automation, dashboards, logs and documentation.</p>
       </div>
-    </section>
-
-    <section class="section reveal">
-      <div class="section-head">
-        <p class="eyebrow">What I do</p>
-        <h2>Building real IT skills through practical projects</h2>
+      <div class="grid-3">
+        <div class="card reveal"><div class="icon">🐍</div><h3>Python Backend Engineering</h3><p>FastAPI, Flask, Telegram bots, REST APIs, CLI tools, SQLAlchemy, SQLite/PostgreSQL, tests and clean project structure.</p></div>
+        <div class="card reveal"><div class="icon">🐳</div><h3>DevOps & Infrastructure</h3><p>Docker, Docker Compose, Nginx, Gunicorn, GitHub Actions CI, Kubernetes basics, Terraform, Ansible and monitoring labs.</p></div>
+        <div class="card reveal"><div class="icon">🔐</div><h3>Security & Troubleshooting</h3><p>Linux security, OSINT, DNS, ports, HTTP headers, logs, IOC extraction, subnet analysis and defensive investigation workflows.</p></div>
       </div>
+    </div>
+  </section>
 
-      <div class="feature-grid">
-        <article class="feature-card">
-          <span class="card-icon">01</span>
-          <h3>Python & Backend</h3>
-          <p>Small web apps, APIs, automation scripts and Telegram bot projects.</p>
-        </article>
-
-        <article class="feature-card">
-          <span class="card-icon">02</span>
-          <h3>DevOps Basics</h3>
-          <p>Docker, Docker Compose, Nginx, GitHub Actions, Linux and deployment practice.</p>
-        </article>
-
-        <article class="feature-card">
-          <span class="card-icon">03</span>
-          <h3>Cybersecurity</h3>
-          <p>Networking, Linux security, OSINT research and safe practical labs.</p>
-        </article>
+  <section class="section section-small">
+    <div class="container grid-2">
+      <div class="card reveal">
+        <p class="eyebrow">Featured System</p>
+        <h2 class="section-title">SmartDesk AI HelpDesk Bot</h2>
+        <p class="section-text">A complete Telegram HelpDesk system with FastAPI backend, admin dashboard, knowledge base, ticket workflow, SQLite database, Docker, tests and CI structure.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">aiogram</span><span class="tag">Docker</span><span class="tag">SQLite</span><span class="tag">Admin UI</span></div>
       </div>
-    </section>
-
-    <section class="section split reveal">
-      <div>
-        <p class="eyebrow">Current focus</p>
-        <h2>From learner to Junior IT / DevOps specialist</h2>
+      <div class="card reveal">
+        <p class="eyebrow">Infrastructure Lab</p>
+        <h2 class="section-title">Enterprise DevOps Infrastructure</h2>
+        <p class="section-text">Corporate-style lab with Flask, PostgreSQL, Nginx, Docker Compose, Kubernetes, Terraform, Ansible, GitHub Actions, Prometheus and Grafana.</p>
+        <div class="tags"><span class="tag">DevOps</span><span class="tag">IaC</span><span class="tag">Monitoring</span><span class="tag">CI/CD</span></div>
       </div>
-      <div class="glass-panel">
-        <p>
-          I am focused on practical experience: building projects, publishing them on GitHub,
-          documenting what I learn and improving my technical portfolio step by step.
-        </p>
-        <div class="stats-row">
-          <div><strong>10+</strong><span>Skills</span></div>
-          <div><strong>4+</strong><span>Projects</span></div>
-          <div><strong>100%</strong><span>Practice</span></div>
-        </div>
+    </div>
+  </section>
+
+  <section class="section-small">
+    <div class="container">
+      <div class="card reveal">
+        <p class="eyebrow">Positioning</p>
+        <h2 class="section-title">Professional-level learning profile.</h2>
+        <p class="section-text">This portfolio presents a strong junior-to-middle oriented technical foundation: broad infrastructure understanding, practical backend projects, Linux certificates, DevOps workflow and defensive security mindset.</p>
+        <div class="tags"><span class="tag">Backend</span><span class="tag">Linux</span><span class="tag">DevOps</span><span class="tag">Security</span><span class="tag">Automation</span><span class="tag">Networking</span></div>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>© 2026 Eliran Portfolio</p>
-    <a href="https://github.com/velik541" target="_blank" rel="noopener">github.com/velik541</a>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <p>© 2026 Eliran Balabekov. Built for GitHub Pages.</p>
+    <a href="https://github.com/velik541" target="_blank" rel="noreferrer">github.com/velik541</a>
+  </div>
+</footer>  <script src="assets/js/main.js"></script>
 </body>
 </html>

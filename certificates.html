@@ -3,66 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eliran Portfolio | Certificates</title>
+  <meta name="description" content="Linux certificates and technical learning" />
+  <title>Certificates — Eliran Balabekov</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <canvas id="space"></canvas>
   <div class="noise"></div>
-  <div class="page-glow glow-one"></div>
-  <div class="page-glow glow-two"></div>
+  <header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html" aria-label="Eliran Portfolio Home">
+      <span class="brand-mark">E</span>
+      <span>Eliran</span>
+    </a>
 
-  <header class="navbar">
-    <a class="brand" href="index.html"><span class="brand-mark">V</span><span class="brand-text">velik541</span></a>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
-    <nav class="nav-links" id="navLinks">
+    <button class="mobile-toggle" data-menu-toggle aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links" data-nav-links>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
       <a href="certificates.html">Certificates</a>
       <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    </div>
 
-  <main class="page-main">
-    <section class="page-title reveal">
+    <div class="nav-actions">
+      <a class="btn btn-primary" href="https://github.com/velik541" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container reveal">
       <p class="eyebrow">Certificates</p>
-      <h1>Proof of learning.</h1>
-      <p>Add certificates as PDF or image files into <b>assets/certificates</b> and update the links below.</p>
-    </section>
+      <h1 class="page-title">Verified Linux training and technical growth.</h1>
+      <p class="page-subtitle">These certificates support my Linux, systems and networking foundation. Click any certificate to open the full image.</p>
+    </div>
+  </section>
 
-    <section class="cert-grid reveal">
-      <article class="cert-card">
-        <div class="cert-preview">PY</div>
-        <h2>Python Certificate</h2>
-        <p>Programming fundamentals, scripts and practical tasks.</p>
-        <a href="assets/certificates/python-certificate.pdf" target="_blank">Open certificate</a>
-      </article>
+  <section class="section-small">
+    <div class="container cert-grid">
+        <article class="card cert-card reveal">
+          <a class="cert-thumb" href="assets/certificates/skillbox-network-linux.jpg" target="_blank" rel="noreferrer">
+            <img src="assets/certificates/skillbox-network-linux.jpg" alt="Сетевое администрирование Linux certificate" loading="lazy" />
+          </a>
+          <div class="cert-body">
+            <p class="cert-meta">Skillbox • 26.06.2026 • SKB0496202</p>
+            <h3 class="cert-title">Сетевое администрирование Linux</h3>
+            <div class="tags"><span class="tag">Linux Networking</span><span class="tag">Administration</span><span class="tag">Certificate</span></div>
+          </div>
+        </article>
+        <article class="card cert-card reveal">
+          <a class="cert-thumb" href="assets/certificates/skillbox-system-admin-linux.jpg" target="_blank" rel="noreferrer">
+            <img src="assets/certificates/skillbox-system-admin-linux.jpg" alt="Системное администрирование Linux certificate" loading="lazy" />
+          </a>
+          <div class="cert-body">
+            <p class="cert-meta">Skillbox • 05.03.2026 • SKB0475064</p>
+            <h3 class="cert-title">Системное администрирование Linux</h3>
+            <div class="tags"><span class="tag">Linux Systems</span><span class="tag">Admin</span><span class="tag">Certificate</span></div>
+          </div>
+        </article>
+        <article class="card cert-card reveal">
+          <a class="cert-thumb" href="assets/certificates/skillbox-linux-os-structure.jpg" target="_blank" rel="noreferrer">
+            <img src="assets/certificates/skillbox-linux-os-structure.jpg" alt="Структура ОС Linux certificate" loading="lazy" />
+          </a>
+          <div class="cert-body">
+            <p class="cert-meta">Skillbox • 25.11.2025 • SKB0424874</p>
+            <h3 class="cert-title">Структура ОС Linux</h3>
+            <div class="tags"><span class="tag">Linux Core</span><span class="tag">OS Structure</span><span class="tag">Certificate</span></div>
+          </div>
+        </article>
+    </div>
+  </section>
 
-      <article class="cert-card">
-        <div class="cert-preview">LX</div>
-        <h2>Linux Certificate</h2>
-        <p>Linux terminal, files, services and networking practice.</p>
-        <a href="assets/certificates/linux-certificate.pdf" target="_blank">Open certificate</a>
-      </article>
-
-      <article class="cert-card">
-        <div class="cert-preview">SEC</div>
-        <h2>Cybersecurity Certificate</h2>
-        <p>Security basics, OSINT, safe labs and network checks.</p>
-        <a href="assets/certificates/cybersecurity-certificate.pdf" target="_blank">Open certificate</a>
-      </article>
-
-      <article class="cert-card">
-        <div class="cert-preview">DEV</div>
-        <h2>DevOps Certificate</h2>
-        <p>Docker, CI/CD, Nginx and deployment fundamentals.</p>
-        <a href="assets/certificates/devops-certificate.pdf" target="_blank">Open certificate</a>
-      </article>
-    </section>
-  </main>
-
-  <footer class="footer"><p>© 2026 Eliran Portfolio</p><a href="projects.html">View projects</a></footer>
-  <script src="assets/js/main.js"></script>
+  <section class="section-small">
+    <div class="container grid-2">
+      <div class="card reveal">
+        <h3>Certificate Focus</h3>
+        <p>Linux administration, system structure and networking form the base for my DevOps and cybersecurity learning path.</p>
+        <div class="tags"><span class="tag">Linux</span><span class="tag">Networking</span><span class="tag">Systems</span><span class="tag">Security</span></div>
+      </div>
+      <div class="card reveal">
+        <h3>Next Growth Areas</h3>
+        <p>Cloud basics, deeper CI/CD, Kubernetes practice, infrastructure automation, monitoring, Python backend and defensive security labs.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <p>© 2026 Eliran Balabekov. Built for GitHub Pages.</p>
+    <a href="https://github.com/velik541" target="_blank" rel="noreferrer">github.com/velik541</a>
+  </div>
+</footer>  <script src="assets/js/main.js"></script>
 </body>
 </html>
