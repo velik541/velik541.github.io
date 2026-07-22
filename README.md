@@ -1,27 +1,14 @@
-# Eliran Shopify-style Portfolio
+# Eliran Portfolio
 
-Static GitHub Pages portfolio website with a clean Shopify-inspired SaaS/business style.
+Black and white minimal portfolio website inspired by modern SaaS landing pages.
 
-## Files
-- `index.html` — home page
-- `services.html` — business services
-- `projects.html` — portfolio projects
-- `about.html` — full skills
-- `certificates.html` — Linux certificates
-- `contact.html` — contact page
-- `assets/css/style.css` — full design
-- `assets/js/main.js` — mobile menu and reveal animation
+## Pages
+- index.html
+- services.html
+- projects.html
+- about.html
+- certificates.html
+- contact.html
 
-## What to edit
-In `contact.html`, replace:
-- `add-your-email-here`
-- `add-your-telegram-here`
-
-## Deploy to GitHub Pages
-Copy all files into the root of `velik541.github.io`, then run:
-
-```bash
-git add .
-git commit -m "Replace portfolio with Shopify-style site"
-git push origin main
-```
+## Focus
+Python, FastAPI, Flask, Docker, Linux, PostgreSQL, Telegram bots, Google Workspace, corporate email setup, business automation, HelpDesk/CRM systems.
