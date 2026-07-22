@@ -1,0 +1,11 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="760" rx="40" fill="#F7F5EF"/>
+<circle cx="1080" cy="100" r="170" fill="#95BF47" opacity=".25"/><circle cx="120" cy="640" r="190" fill="#173D2D" opacity=".10"/>
+<rect x="110" y="120" width="980" height="520" rx="36" fill="#FFFFFF" stroke="#D6DCCE"/>
+<rect x="170" y="180" width="240" height="160" rx="28" fill="#173D2D"/><text x="196" y="248" fill="#F7F5EF" font-family="Arial" font-size="30" font-weight="700">Backend</text><text x="196" y="294" fill="#D9F99D" font-family="Arial" font-size="22">FastAPI • Flask</text>
+<rect x="480" y="180" width="240" height="160" rx="28" fill="#EAF7DC"/><text x="506" y="248" fill="#173D2D" font-family="Arial" font-size="30" font-weight="700">DevOps</text><text x="506" y="294" fill="#173D2D" opacity=".75" font-family="Arial" font-size="22">Docker • Linux</text>
+<rect x="790" y="180" width="240" height="160" rx="28" fill="#F0E8D8"/><text x="816" y="248" fill="#173D2D" font-family="Arial" font-size="30" font-weight="700">Business IT</text><text x="816" y="294" fill="#173D2D" opacity=".75" font-family="Arial" font-size="22">Email • Workspace</text>
+<rect x="170" y="410" width="240" height="160" rx="28" fill="#EAF7DC"/><text x="196" y="478" fill="#173D2D" font-family="Arial" font-size="30" font-weight="700">Bots</text><text x="196" y="524" fill="#173D2D" opacity=".75" font-family="Arial" font-size="22">Telegram API</text>
+<rect x="480" y="410" width="240" height="160" rx="28" fill="#F0E8D8"/><text x="506" y="478" fill="#173D2D" font-family="Arial" font-size="30" font-weight="700">Security</text><text x="506" y="524" fill="#173D2D" opacity=".75" font-family="Arial" font-size="22">OSINT • Logs</text>
+<rect x="790" y="410" width="240" height="160" rx="28" fill="#173D2D"/><text x="816" y="478" fill="#F7F5EF" font-family="Arial" font-size="30" font-weight="700">Databases</text><text x="816" y="524" fill="#D9F99D" font-family="Arial" font-size="22">PostgreSQL • SQL</text>
+</svg>

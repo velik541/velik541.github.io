@@ -3,110 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Python DevOps Linux security portfolio projects" />
-  <title>Projects — Eliran Balabekov</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio projects in Python, FastAPI, Docker, DevOps, Telegram bots, Linux and cybersecurity" />
+  <title>Projects — Eliran</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <div class="noise"></div>
-  <header class="site-header">
-  <nav class="nav">
-    <a class="brand" href="index.html" aria-label="Eliran Portfolio Home">
-      <span class="brand-mark">E</span>
-      <span>Eliran</span>
-    </a>
 
-    <button class="mobile-toggle" data-menu-toggle aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-
+<header class="site-header" data-header>
+  <div class="top-strip">Available for practical IT automation, backend and small business setup projects</div>
+  <nav class="nav container">
+    <a class="brand" href="index.html" aria-label="Eliran home"><span class="brand-mark">E</span><span>Eliran</span></a>
+    <button class="nav-toggle" data-menu-toggle aria-label="Open menu"><span></span><span></span><span></span></button>
     <div class="nav-links" data-nav-links>
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
       <a href="projects.html">Projects</a>
+      <a href="about.html">Skills</a>
       <a href="certificates.html">Certificates</a>
       <a href="contact.html">Contact</a>
     </div>
-
-    <div class="nav-actions">
-      <a class="btn btn-primary" href="https://github.com/velik541" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
+    <a class="nav-cta" href="contact.html">Work with me</a>
   </nav>
 </header>
+
+
 <main>
   <section class="page-hero">
-    <div class="container reveal">
-      <p class="eyebrow">Projects</p>
-      <h1 class="page-title">Production-style projects with real engineering value.</h1>
-      <p class="page-subtitle">These repositories demonstrate backend development, DevOps workflow, Docker infrastructure, automation, Linux, networking and defensive cybersecurity practice.</p>
-    </div>
+    <div class="container narrow reveal"><p class="eyebrow">Projects</p><h1>Practical portfolio projects.</h1><p>Each project is built to demonstrate a useful technical direction: backend, automation, DevOps, Linux, security or business IT.</p></div>
   </section>
-
-  <section class="section-small">
-    <div class="container grid-2">
-        <div class="card project-card reveal">
-          <div class="project-top"><span class="project-badge">Featured</span><span class="tag">Full System</span></div>
-          <h3>SmartDesk AI HelpDesk Bot</h3>
-          <p>Portfolio-ready Telegram HelpDesk platform with user commands, local knowledge base search, ticket creation, admin dashboard, message history, feedback, FastAPI backend and Dockerized setup.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">aiogram</span><span class="tag">SQLAlchemy</span><span class="tag">SQLite</span><span class="tag">Jinja2</span><span class="tag">Docker</span><span class="tag">Tests</span></div>
-          <a class="btn" href="https://github.com/velik541" target="_blank" rel="noreferrer">Open Repository</a>
-        </div>
-        <div class="card project-card reveal">
-          <div class="project-top"><span class="project-badge">Featured</span><span class="tag">DevOps Lab</span></div>
-          <h3>Enterprise DevOps Infrastructure Lab</h3>
-          <p>Corporate infrastructure simulation built around a Flask platform with PostgreSQL, Nginx, Docker Compose, Kubernetes, Terraform, Ansible, CI/CD, Prometheus and Grafana monitoring.</p>
-          <div class="tags"><span class="tag">Flask</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Terraform</span><span class="tag">Ansible</span><span class="tag">Prometheus</span><span class="tag">Grafana</span></div>
-          <a class="btn" href="https://github.com/velik541/devops-lab" target="_blank" rel="noreferrer">Open Repository</a>
-        </div>
-        <div class="card project-card reveal">
-          <div class="project-top"><span class="project-badge">Web App</span><span class="tag">Dockerized</span></div>
-          <h3>Beautiful Flask Tabs App</h3>
-          <p>Modern Flask web application with tabs, API endpoint, JSON notes, feedback form, responsive frontend, Dockerfile, Docker Compose and Nginx configuration.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Docker</span><span class="tag">Nginx</span></div>
-          <a class="btn" href="https://github.com/velik541/beautiful-flask-tabs-app" target="_blank" rel="noreferrer">Open Repository</a>
-        </div>
-        <div class="card project-card reveal">
-          <div class="project-top"><span class="project-badge">Infrastructure</span><span class="tag">Docker Compose</span></div>
-          <h3>DevOps Lab Site</h3>
-          <p>Dockerized Flask + Redis + Nginx + Gunicorn project with reverse proxy architecture, visit counter, API endpoint, healthcheck and stats route.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Redis</span><span class="tag">Docker Compose</span><span class="tag">Nginx</span><span class="tag">Gunicorn</span></div>
-          <a class="btn" href="https://github.com/velik541/devops-lab-site" target="_blank" rel="noreferrer">Open Repository</a>
-        </div>
-        <div class="card project-card reveal">
-          <div class="project-top"><span class="project-badge">Security Tool</span><span class="tag">CLI</span></div>
-          <h3>Velik Cyber Toolkit</h3>
-          <p>Defensive Python CLI toolkit for system information, DNS, ping diagnostics, safe port checks, security headers, password checks, hashing, log analysis, IOC extraction, subnet calculation and reports.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">CLI</span><span class="tag">Networking</span><span class="tag">Logs</span><span class="tag">OSINT</span><span class="tag">Reports</span><span class="tag">Defensive Security</span></div>
-          <a class="btn" href="https://github.com/velik541/velik-cyber-toolkit" target="_blank" rel="noreferrer">Open Repository</a>
-        </div>
-        <div class="card project-card reveal">
-          <div class="project-top"><span class="project-badge">Automation</span><span class="tag">Telegram</span></div>
-          <h3>Telegram Bot Project</h3>
-          <p>Python Telegram bot project focused on practical automation, command handling, GitHub workflow and backend learning.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">Telegram Bot API</span><span class="tag">Automation</span><span class="tag">GitHub</span></div>
-          <a class="btn" href="https://github.com/velik541/botiiu" target="_blank" rel="noreferrer">Open Repository</a>
-        </div>
-    </div>
-  </section>
-
-  <section class="section-small">
-    <div class="container">
-      <div class="card reveal">
-        <p class="eyebrow">What these projects prove</p>
-        <h2 class="section-title">Backend + DevOps + Security thinking in one portfolio.</h2>
-        <p class="section-text">The projects show ability to build working applications, package them with Docker, describe architecture, use GitHub, prepare CI, work with Linux tools, analyze networks and think about defensive security.</p>
-      </div>
-    </div>
-  </section>
+  <section class="section"><div class="container">
+<div class="project-grid">
+  <article class="project-card reveal featured"><div class="project-tag">SaaS / Business IT</div><h3>VeliDesk Cloud Platform</h3><p>A local SaaS-style platform foundation for small business digital office services. Includes FastAPI backend, PostgreSQL, registration, login, client dashboard, admin area, client/admin roles, secure password hashing, cookie sessions and Docker Compose setup.</p><div class="pill-row"><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>Auth</span><span>Admin Panel</span></div></article>
+  <article class="project-card reveal"><div class="project-tag">HelpDesk Automation</div><h3>SmartDesk AI HelpDesk Bot</h3><p>Telegram support automation system with FastAPI backend, admin dashboard, knowledge base search, SQLite database, support tickets, Docker setup, tests and GitHub Actions CI.</p><div class="pill-row"><span>Python</span><span>FastAPI</span><span>aiogram</span><span>SQLite</span><span>CI</span></div><a href="https://github.com/velik541/botiiu" target="_blank" rel="noreferrer">View on GitHub</a></article>
+  <article class="project-card reveal"><div class="project-tag">DevOps Lab</div><h3>Enterprise DevOps Infrastructure Lab</h3><p>Corporate-style infrastructure lab using Flask, PostgreSQL 16, Nginx, Docker Compose, Kubernetes, Terraform, Ansible, GitHub Actions, Prometheus and Grafana.</p><div class="pill-row"><span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>Ansible</span><span>Monitoring</span></div><a href="https://github.com/velik541/devops-lab" target="_blank" rel="noreferrer">View on GitHub</a></article>
+  <article class="project-card reveal"><div class="project-tag">Cyber / CLI</div><h3>Velik Cyber Toolkit</h3><p>Defensive Python toolkit for networking diagnostics, log analysis, IOC extraction, hashing, password checks, subnet calculations, reports and AI investigation prompts.</p><div class="pill-row"><span>Python</span><span>Networking</span><span>Logs</span><span>OSINT</span><span>Reports</span></div></article>
+  <article class="project-card reveal"><div class="project-tag">Web App</div><h3>Beautiful Flask Tabs App</h3><p>Responsive Flask web app with tabs, API endpoint, notes saved to JSON, feedback form, Docker and Nginx support.</p><div class="pill-row"><span>Flask</span><span>HTML</span><span>CSS</span><span>Docker</span><span>Nginx</span></div><a href="https://github.com/velik541/beautiful-flask-tabs-app" target="_blank" rel="noreferrer">View on GitHub</a></article>
+  <article class="project-card reveal"><div class="project-tag">Docker / Nginx</div><h3>DevOps Lab Site</h3><p>Mini DevOps project with Flask, Redis, Nginx, Gunicorn and Docker Compose. Demonstrates multi-service architecture and reverse proxy basics.</p><div class="pill-row"><span>Flask</span><span>Redis</span><span>Nginx</span><span>Docker Compose</span></div></article>
+  <article class="project-card reveal"><div class="project-tag">Portfolio</div><h3>GitHub Pages Portfolio</h3><p>Static professional website for presenting skills, services, projects, certificates and contact details using GitHub Pages.</p><div class="pill-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div></article>
+</div>
+</div></section>
 </main>
+
+
 <footer class="footer">
   <div class="container footer-grid">
-    <p>© 2026 Eliran Balabekov. Built for GitHub Pages.</p>
-    <a href="https://github.com/velik541" target="_blank" rel="noreferrer">github.com/velik541</a>
+    <div>
+      <a class="brand footer-brand" href="index.html"><span class="brand-mark">E</span><span>Eliran</span></a>
+      <p>IT automation, Python backend, Linux, Docker and business systems.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/velik541" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="certificates.html">Certificates</a>
+    </div>
   </div>
-</footer>  <script src="assets/js/main.js"></script>
+  <div class="container footer-bottom">© 2026 Eliran. Built with GitHub Pages.</div>
+</footer>
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>

@@ -1,31 +1,27 @@
-# Eliran Balabekov — Professional Portfolio
+# Eliran Shopify-style Portfolio
 
-Static multi-page portfolio website for GitHub Pages.
+Static GitHub Pages portfolio website with a clean Shopify-inspired SaaS/business style.
 
-## Strong positioning
+## Files
+- `index.html` — home page
+- `services.html` — business services
+- `projects.html` — portfolio projects
+- `about.html` — full skills
+- `certificates.html` — Linux certificates
+- `contact.html` — contact page
+- `assets/css/style.css` — full design
+- `assets/js/main.js` — mobile menu and reveal animation
 
-This version presents the profile in a stronger professional style while staying based on real portfolio projects and real certificates.
+## What to edit
+In `contact.html`, replace:
+- `add-your-email-here`
+- `add-your-telegram-here`
 
-## Pages
-
-- `index.html` — homepage
-- `about.html` — about, stack, mindset
-- `projects.html` — production-style projects
-- `certificates.html` — Skillbox Linux certificates
-- `contact.html` — contact details
-
-## Publish
-
-Copy all files to the root of `velik541.github.io` and run:
+## Deploy to GitHub Pages
+Copy all files into the root of `velik541.github.io`, then run:
 
 ```bash
 git add .
-git commit -m "Upgrade professional portfolio"
+git commit -m "Replace portfolio with Shopify-style site"
 git push origin main
 ```
-
-Open: https://velik541.github.io
-
-## Edit contact
-
-Open `contact.html` and replace `add-your-email-here` with your real email.
