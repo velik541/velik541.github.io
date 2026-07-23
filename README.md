@@ -1,14 +1,15 @@
-# Eliran Portfolio
+# eliran port Portfolio
 
-Black and white minimal portfolio website inspired by modern SaaS landing pages.
+Black & white minimal portfolio website inspired by modern SaaS / commerce landing pages.
 
 ## Pages
-- index.html
-- services.html
-- projects.html
-- about.html
-- certificates.html
-- contact.html
+- Home
+- Services
+- Projects
+- Skills
+- About
+- Certificates
+- Contact
 
-## Focus
-Python, FastAPI, Flask, Docker, Linux, PostgreSQL, Telegram bots, Google Workspace, corporate email setup, business automation, HelpDesk/CRM systems.
+## Deploy
+Copy files into `velik541.github.io`, commit and push to GitHub Pages.
